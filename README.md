@@ -15,11 +15,11 @@ The best performing model was in this case was the "VotingEnsemble" with an accu
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
 The pipeline architecture could be described under the following steps:
-Workspace Creation:
+- Workspace Creation:
 This workspace is used to manage data, compute resources, code, models, and other artifacts related to machine learning workloads.
-Compute Instance Creation:
+- Compute Instance Creation:
 A compute instance should be created. This instance will be needed for training and managing our model, in this case to run the training process.
-Hyperdrive Configuration:
+- Hyperdrive Configuration:
 
 **What are the benefits of the parameter sampler you chose?**
 
