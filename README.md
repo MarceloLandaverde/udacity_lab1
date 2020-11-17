@@ -20,7 +20,9 @@ This workspace is used to manage data, compute resources, code, models, and othe
 - Compute Instance Creation:
 A compute instance should be created. This instance will be needed for training and managing our model, in this case to run the training process.
 - Hyperdrive Configuration:
-
+The Hyperdrive Configuration allows us to automate the hyperparameter tuning to control the model training process on much more efficient way thant the classic "manual" approach
+Within the Hyperdrive Configuration two inputs allowed some nice benefits. These were: \n
+Parameter Sample
 **What are the benefits of the parameter sampler you chose?**
 
 **What are the benefits of the early stopping policy you chose?**
