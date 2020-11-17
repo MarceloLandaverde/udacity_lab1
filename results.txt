@@ -1,0 +1,117 @@
+Hyperdrive Results:
+Best Run Id:  HD_3380c24d-f0b8-40be-b25a-bc3bb9daa960_3
+
+Accuracy: 0.9104151493080845
+
+AutoMl Results:
+Running on local machine
+Parent Run ID: AutoML_51d29395-c04b-4a20-bebd-31956631c3c9
+
+Current status: DatasetEvaluation. Gathering dataset statistics.
+Current status: FeaturesGeneration. Generating features for the dataset.
+Current status: DatasetFeaturization. Beginning to fit featurizers and featurize the dataset.
+Current status: DatasetFeaturizationCompleted. Completed fit featurizers and featurizing the dataset.
+Current status: DatasetBalancing. Performing class balancing sweeping
+Current status: DatasetCrossValidationSplit. Generating individually featurized CV splits.
+
+****************************************************************************************************
+DATA GUARDRAILS: 
+
+TYPE:         Class balancing detection
+STATUS:       ALERTED
+DESCRIPTION:  To decrease model bias, please cancel the current run and fix balancing problem.
+              Learn more about imbalanced data: https://aka.ms/AutomatedMLImbalancedData
+DETAILS:      Imbalanced data can lead to a falsely perceived positive effect of a model's accuracy because the input data has bias towards one class.
++---------------------------------+---------------------------------+--------------------------------------+
+|Size of the smallest class       |Name/Label of the smallest class |Number of samples in the training data|
++=================================+=================================+======================================+
+|2782                             |1                                |24712                                 |
++---------------------------------+---------------------------------+--------------------------------------+
+
+****************************************************************************************************
+
+TYPE:         Missing feature values imputation
+STATUS:       PASSED
+DESCRIPTION:  No feature missing values were detected in the training data.
+              Learn more about missing value imputation: https://aka.ms/AutomatedMLFeaturization
+
+****************************************************************************************************
+
+TYPE:         High cardinality feature detection
+STATUS:       PASSED
+DESCRIPTION:  Your inputs were analyzed, and no high cardinality features were detected.
+              Learn more about high cardinality feature handling: https://aka.ms/AutomatedMLFeaturization
+
+****************************************************************************************************
+Current status: ModelSelection. Beginning model selection.
+
+****************************************************************************************************
+ITERATION: The iteration being evaluated.
+PIPELINE: A summary description of the pipeline being evaluated.
+DURATION: Time taken for the current iteration.
+METRIC: The result of computing score on the fitted pipeline.
+BEST: The best observed score thus far.
+****************************************************************************************************
+
+ ITERATION   PIPELINE                                       DURATION      METRIC      BEST
+         0   MaxAbsScaler LightGBM                          0:00:38       0.9137    0.9137
+         1   MaxAbsScaler XGBoostClassifier                 0:00:32       0.9138    0.9138
+         2   MaxAbsScaler RandomForest                      0:00:29       0.8945    0.9138
+         3   MaxAbsScaler RandomForest                      0:00:25       0.8874    0.9138
+         4   MaxAbsScaler SGD                               0:00:25       0.8592    0.9138
+         5   MaxAbsScaler SGD                               0:00:24       0.9062    0.9138
+         6   MaxAbsScaler ExtremeRandomTrees                0:00:27       0.8981    0.9138
+         7   MaxAbsScaler ExtremeRandomTrees                0:00:28       0.8996    0.9138
+         8   MaxAbsScaler ExtremeRandomTrees                0:00:28       0.8993    0.9138
+         9   MaxAbsScaler ExtremeRandomTrees                0:00:29       0.7795    0.9138
+        10   MaxAbsScaler SGD                               0:00:29       0.9016    0.9138
+        11   MaxAbsScaler SGD                               0:00:24       0.9033    0.9138
+        12   MaxAbsScaler RandomForest                      0:00:29       0.8884    0.9138
+        13   StandardScalerWrapper ExtremeRandomTrees       0:00:27       0.8874    0.9138
+        14   MaxAbsScaler RandomForest                      0:00:26       0.7654    0.9138
+        15   MaxAbsScaler SGD                               0:00:27       0.8546    0.9138
+        16   MaxAbsScaler RandomForest                      0:00:27       0.8874    0.9138
+        17   MaxAbsScaler ExtremeRandomTrees                0:00:29       0.8981    0.9138
+        18   SparseNormalizer ExtremeRandomTrees            0:00:33       0.7286    0.9138
+        19   MaxAbsScaler SGD                               0:00:26       0.9059    0.9138
+        20   MaxAbsScaler ExtremeRandomTrees                0:00:29       0.7395    0.9138
+        21   MaxAbsScaler RandomForest                      0:00:27       0.7774    0.9138
+        22   MaxAbsScaler LightGBM                          0:00:32       0.9047    0.9138
+        23   MaxAbsScaler RandomForest                      0:00:27       0.8874    0.9138
+        24   MaxAbsScaler LightGBM                          0:00:34       0.9085    0.9138
+        25   SparseNormalizer XGBoostClassifier             0:00:26       0.8874    0.9138
+        26   StandardScalerWrapper XGBoostClassifier        0:00:26       0.9020    0.9138
+        27   StandardScalerWrapper LightGBM                 0:00:31       0.8981    0.9138
+        28   StandardScalerWrapper LightGBM                 0:00:32       0.9032    0.9138
+        29   MaxAbsScaler LightGBM                          0:00:30       0.9042    0.9138
+        30   SparseNormalizer XGBoostClassifier             0:01:08       0.9133    0.9138
+        31   MaxAbsScaler ExtremeRandomTrees                0:00:30       0.8874    0.9138
+        32   MaxAbsScaler ExtremeRandomTrees                0:00:38       0.9000    0.9138
+        33   VotingEnsemble                                 0:00:59       0.9155    0.9155
+        34   StackEnsemble                                  0:01:21       0.9134    0.9155
+Stopping criteria reached at iteration 35. Ending experiment.
+****************************************************************************************************
+Current status: BestRunExplainModel. Best run model explanations started
+Current status: ModelExplanationDataSetSetup. Model explanations data setup completed
+Current status: PickSurrogateModel. Choosing LightGBM as the surrogate model for explanations
+Current status: EngineeredFeatureExplanations. Computation of engineered features started
+Current status: EngineeredFeatureExplanations. Computation of engineered features completed
+Current status: RawFeaturesExplanations. Computation of raw features started
+Current status: RawFeaturesExplanations. Computation of raw features completed
+Current status: BestRunExplainModel. Best run model explanations completed
+****************************************************************************************************
+
+Best Model AutoML:
+Algorithm name
+VotingEnsemble
+Accuracy
+0.91551
+
+
+View all other metrics
+Sampling
+100.00 %
+Registered models
+best_run_automl.pkl:1
+Deploy status
+No deployment yet
