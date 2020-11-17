@@ -7,11 +7,14 @@ This model is then compared to an Azure AutoML run.
 
 ## Summary
 **In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
+This dataset contains data about socio-economical statuses, financial records and similars. Here we are seeking to predict if for a specific person a bankmarketing campaing will take place or not.
 
 **In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
+The best performing model was in this case was the "VotingEnsemble" with an accuracy of 0.91551
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
+The pipeline architecture could be described under the following steps:
 
 **What are the benefits of the parameter sampler you chose?**
 
