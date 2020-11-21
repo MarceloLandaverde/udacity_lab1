@@ -1,0 +1,6 @@
+{'ensembled_iterations': '[0, 27, 1, 26, 32, 10, 14]',
+ 'ensembled_algorithms': "['LightGBM', 'XGBoostClassifier', 'XGBoostClassifier', 'XGBoostClassifier', 'XGBoostClassifier', 'SGD', 'RandomForest']",
+ 'ensemble_weights': '[0.2857142857142857, 0.14285714285714285, 0.07142857142857142, 0.14285714285714285, 0.21428571428571427, 0.07142857142857142, 0.07142857142857142]',
+ 'best_individual_pipeline_score': '0.9166803789014268',
+ 'best_individual_iteration': '0',
+ 'model_explanation': 'True'}
