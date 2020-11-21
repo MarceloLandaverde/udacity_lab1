@@ -23,7 +23,9 @@ A compute instance should be created. This instance will be needed for training 
 The Hyperdrive Configuration allows us to automate the hyperparameter tuning to control the model training process on much more efficient way thant the classic "manual" approach
 Within the Hyperdrive Configuration two inputs allowed some nice benefits. These are:
 
-Parameter Sample
+- Parameter Sample and early stopping policy.
+
+Here in short some of the benefits of the above mentioned features:
 
 **What are the benefits of the parameter sampler you chose?**
 
