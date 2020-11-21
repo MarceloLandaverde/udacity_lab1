@@ -36,6 +36,16 @@ Here in short some of the benefits of the above mentioned features:
 ## AutoML Model 
 The results of the AutoML gave as a winner a "VotingEnsemble" model with an accuracy of 0.91551
 The voting ensemble method combines conceptually different machine learning classifiers and use a majority vote or the average predicted probabilities (soft vote) to predict the class labels. Such a classifier can be useful for a set of equally well performing model in order to balance out their individual weaknesses.
+In this case the model recommended from the AutoMl (VotingEnsemble) presents the following parameters:
+
+{'ensembled_iterations': '[0, 27, 1, 26, 32, 10, 14]',
+ 'ensembled_algorithms': "['LightGBM', 'XGBoostClassifier', 'XGBoostClassifier', 'XGBoostClassifier', 'XGBoostClassifier', 'SGD', 'RandomForest']",
+ 'ensemble_weights': '[0.2857142857142857, 0.14285714285714285, 0.07142857142857142, 0.14285714285714285, 0.21428571428571427, 0.07142857142857142, 0.07142857142857142]',
+ 'best_individual_pipeline_score': '0.9166803789014268',
+ 'best_individual_iteration': '0',
+ 'model_explanation': 'True'}
+
+
 
 ## Pipeline comparison
 Comparing the results of the Hyperdrive agains the AutoMl there are actually not many differences. Let's evaluate for instance the main metric of interest:
