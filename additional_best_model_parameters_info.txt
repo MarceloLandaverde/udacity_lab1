@@ -1,0 +1,217 @@
+datatransformer
+{'enable_dnn': None,
+ 'enable_feature_sweeping': None,
+ 'feature_sweeping_config': None,
+ 'feature_sweeping_timeout': None,
+ 'featurization_config': None,
+ 'force_text_dnn': None,
+ 'is_cross_validation': None,
+ 'is_onnx_compatible': None,
+ 'logger': None,
+ 'observer': None,
+ 'task': None,
+ 'working_dir': None}
+
+prefittedsoftvotingclassifier
+{'estimators': ['0', '27', '1', '26', '32', '10', '14'],
+ 'weights': [0.2857142857142857,
+             0.14285714285714285,
+             0.07142857142857142,
+             0.14285714285714285,
+             0.21428571428571427,
+             0.07142857142857142,
+             0.07142857142857142]}
+
+0 - maxabsscaler
+{'copy': True}
+
+0 - lightgbmclassifier
+{'boosting_type': 'gbdt',
+ 'class_weight': None,
+ 'colsample_bytree': 1.0,
+ 'importance_type': 'split',
+ 'learning_rate': 0.1,
+ 'max_depth': -1,
+ 'min_child_samples': 20,
+ 'min_child_weight': 0.001,
+ 'min_split_gain': 0.0,
+ 'n_estimators': 100,
+ 'n_jobs': 1,
+ 'num_leaves': 31,
+ 'objective': None,
+ 'random_state': None,
+ 'reg_alpha': 0.0,
+ 'reg_lambda': 0.0,
+ 'silent': True,
+ 'subsample': 1.0,
+ 'subsample_for_bin': 200000,
+ 'subsample_freq': 0,
+ 'verbose': -10}
+
+27 - sparsenormalizer
+{'copy': True, 'norm': 'max'}
+
+27 - xgboostclassifier
+{'base_score': 0.5,
+ 'booster': 'gbtree',
+ 'colsample_bylevel': 1,
+ 'colsample_bynode': 1,
+ 'colsample_bytree': 0.6,
+ 'eta': 0.3,
+ 'gamma': 0,
+ 'learning_rate': 0.1,
+ 'max_delta_step': 0,
+ 'max_depth': 4,
+ 'max_leaves': 15,
+ 'min_child_weight': 1,
+ 'missing': nan,
+ 'n_estimators': 100,
+ 'n_jobs': 1,
+ 'nthread': None,
+ 'objective': 'reg:logistic',
+ 'random_state': 0,
+ 'reg_alpha': 0.7291666666666667,
+ 'reg_lambda': 0.5208333333333334,
+ 'scale_pos_weight': 1,
+ 'seed': None,
+ 'silent': None,
+ 'subsample': 1,
+ 'tree_method': 'auto',
+ 'verbose': -10,
+ 'verbosity': 0}
+
+1 - maxabsscaler
+{'copy': True}
+
+1 - xgboostclassifier
+{'base_score': 0.5,
+ 'booster': 'gbtree',
+ 'colsample_bylevel': 1,
+ 'colsample_bynode': 1,
+ 'colsample_bytree': 1,
+ 'gamma': 0,
+ 'learning_rate': 0.1,
+ 'max_delta_step': 0,
+ 'max_depth': 3,
+ 'min_child_weight': 1,
+ 'missing': nan,
+ 'n_estimators': 100,
+ 'n_jobs': 1,
+ 'nthread': None,
+ 'objective': 'binary:logistic',
+ 'random_state': 0,
+ 'reg_alpha': 0,
+ 'reg_lambda': 1,
+ 'scale_pos_weight': 1,
+ 'seed': None,
+ 'silent': None,
+ 'subsample': 1,
+ 'tree_method': 'auto',
+ 'verbose': -10,
+ 'verbosity': 0}
+
+26 - sparsenormalizer
+{'copy': True, 'norm': 'l2'}
+
+26 - xgboostclassifier
+{'base_score': 0.5,
+ 'booster': 'gbtree',
+ 'colsample_bylevel': 1,
+ 'colsample_bynode': 1,
+ 'colsample_bytree': 1,
+ 'eta': 0.001,
+ 'gamma': 0.1,
+ 'learning_rate': 0.1,
+ 'max_delta_step': 0,
+ 'max_depth': 8,
+ 'max_leaves': 0,
+ 'min_child_weight': 1,
+ 'missing': nan,
+ 'n_estimators': 25,
+ 'n_jobs': 1,
+ 'nthread': None,
+ 'objective': 'reg:logistic',
+ 'random_state': 0,
+ 'reg_alpha': 0,
+ 'reg_lambda': 2.5,
+ 'scale_pos_weight': 1,
+ 'seed': None,
+ 'silent': None,
+ 'subsample': 0.5,
+ 'tree_method': 'auto',
+ 'verbose': -10,
+ 'verbosity': 0}
+
+32 - sparsenormalizer
+{'copy': True, 'norm': 'l2'}
+
+32 - xgboostclassifier
+{'base_score': 0.5,
+ 'booster': 'gbtree',
+ 'colsample_bylevel': 0.8,
+ 'colsample_bynode': 1,
+ 'colsample_bytree': 1,
+ 'eta': 0.3,
+ 'gamma': 0,
+ 'learning_rate': 0.1,
+ 'max_delta_step': 0,
+ 'max_depth': 7,
+ 'max_leaves': 31,
+ 'min_child_weight': 1,
+ 'missing': nan,
+ 'n_estimators': 100,
+ 'n_jobs': 1,
+ 'nthread': None,
+ 'objective': 'reg:logistic',
+ 'random_state': 0,
+ 'reg_alpha': 1.4583333333333335,
+ 'reg_lambda': 0.20833333333333334,
+ 'scale_pos_weight': 1,
+ 'seed': None,
+ 'silent': None,
+ 'subsample': 1,
+ 'tree_method': 'auto',
+ 'verbose': -10,
+ 'verbosity': 0}
+
+10 - maxabsscaler
+{'copy': True}
+
+10 - sgdclassifierwrapper
+{'alpha': 7.142885714285714,
+ 'class_weight': None,
+ 'eta0': 0.001,
+ 'fit_intercept': True,
+ 'l1_ratio': 0.8775510204081632,
+ 'learning_rate': 'constant',
+ 'loss': 'modified_huber',
+ 'max_iter': 1000,
+ 'n_jobs': 1,
+ 'penalty': 'none',
+ 'power_t': 0,
+ 'random_state': None,
+ 'tol': 0.01}
+
+14 - maxabsscaler
+{'copy': True}
+
+14 - randomforestclassifier
+{'bootstrap': True,
+ 'ccp_alpha': 0.0,
+ 'class_weight': 'balanced',
+ 'criterion': 'gini',
+ 'max_depth': None,
+ 'max_features': 'log2',
+ 'max_leaf_nodes': None,
+ 'max_samples': None,
+ 'min_impurity_decrease': 0.0,
+ 'min_impurity_split': None,
+ 'min_samples_leaf': 0.035789473684210524,
+ 'min_samples_split': 0.29105263157894734,
+ 'min_weight_fraction_leaf': 0.0,
+ 'n_estimators': 25,
+ 'n_jobs': 1,
+ 'oob_score': False,
+ 'random_state': None,
+ 'verbose': 0,
+ 'warm_start': False}
