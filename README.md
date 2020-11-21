@@ -38,7 +38,7 @@ The results of the AutoML gave as a winner a "VotingEnsemble" model with an accu
 The voting ensemble method combines conceptually different machine learning classifiers and uses a majority vote or the average predicted probabilities (soft vote) to predict the class labels. Such a classifier can be useful for a set of equally well performing model in order to balance out their individual weaknesses.
 In this case the model recommended from the AutoMl (VotingEnsemble) presents the following (main)parameters:
 
--Estimators: This refers to the different ensembled algorithms that were tested. In this case the following were performed:
+- Estimators: This refers to the different ensembled algorithms that were tested. In this case the following were performed:
 'LightGBM', 'XGBoostClassifier', 'XGBoostClassifier', 'XGBoostClassifier', 'XGBoostClassifier', 'SGD', 'RandomForest'
 - Weights: This refers to the sequence of weights (float or int) to weight the occurrences of predicted class labels (hard voting) or class probabilities before averaging (soft voting). The ensemble weights for each of the above mentioned algorithms are the following:
 0.2857142857142857, 0.14285714285714285, 0.07142857142857142, 0.14285714285714285, 0.21428571428571427, 0.07142857142857142, 0.07142857142857142]
