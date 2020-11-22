@@ -61,6 +61,12 @@ Comparing the results of the Hyperdrive agains the AutoMl there are actually not
 - AutoMl Accuravy: 0.91551
 
 ## Future work
-A good start would be to perform some sampling up/down since the classes are not balanced. This would definetely help to reduce model bias
+In the future it would be interesting to do some additional adjustments to see the outputs of the experiments. Here a couple of ideas or possibilities:
+*Sampling Up/Down*:
+A good start would be to perform some sampling up/down since the classes are not balanced. This would definetely help to reduce model bias.
+*Additional Metrics*:
+Predicting only accuracy could me in some cases misleading. It would be interesting to see how the model performs by checking model performance by other metrics, such as AUC or by checking on specific elements of the Confusion Matrix such as True Positive Rates and/or False Positive Rates.
+*Paremeters*:
+The train.py scripts concentrates only on the inverse of regularization strength ('--C') and the maximum number of iterations to solve to converge ('max_iter'). Nevetheless it would interesting to add additional parameters to observe how the model performs. Some proposals could include the type of penalty, different class weights or the type of solver
 
 
