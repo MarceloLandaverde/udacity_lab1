@@ -60,6 +60,14 @@ Comparing the results of the Hyperdrive agains the AutoMl there are actually not
 - Hyperdrive Accuracy: 0.9104151493080845
 - AutoMl Accuravy: 0.91551
 
+Even though in the current case there was not a huge difference on metric of interest, it's important to emphasize the significant difference between these pipelines:
+
+For AutoML you do not need to specify the algorithm to be tested. The AutoML will try different models and algorithms. However it is possible to  choose which models are allowed (allowed_models) or which not (blocked_models)
+
+On the other hand when running the HyperDrive we really had to specify (by using the 'train.py' script) which specific algorithm we want to test. The hyperdrive helps us though to automate testing different  parameters within the selected model; nevertheless this parameters have to be specified from us.
+
+In a more generic way you could say that the difference between HyperDrive and AutoML is that HyperDrive focuses on automation of choosing parameters for the selected model; while AutoML focuses on automating the main ML tasks , i.e.: Feature Engineering, Hyperparameter  selection, Training, Tuning.
+
 ## Future work
 In the future it would be interesting to do some additional adjustments to see the outputs of the experiments. Here a couple of ideas or possibilities:
 - *Sampling Up/Down*:
