@@ -6,11 +6,14 @@ In this project, we build and optimize an Azure ML pipeline using the Python SDK
 This model is then compared to an Azure AutoML run.
 
 ## Summary
-**In 1-2 sentences, explain the problem statement: e.g "This dataset contains data about... we seek to predict..."**
 This dataset contains data about socio-economical statuses, financial records and similars. Here we are seeking to predict if for a specific person a bankmarketing campaing will take place or not.
+To find out the above mentioned target we had tested two different approaches.
+*Experiment 1*:
+We have created a train.py script which contains a logistic regression model. In this case the experiment model has been performed using the hyperdrive package which supports or focuses on hyperparameter tuning
 
-**In 1-2 sentences, explain the solution: e.g. "The best performing model was a ..."**
-The best performing model was in this case was the "VotingEnsemble" with an accuracy of 0.91551
+*Experiment 2*:
+In this experiment we have decided to try the benefits of the AutoMl package which concentrates in automating the time consuming, iterative tasks of machine learning model development. The results gave a "VotingEnsemble" as best performing model with an accuracy (primary metric of interest) of 0.91551
+
 
 ## Scikit-learn Pipeline
 **Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
