@@ -8,6 +8,7 @@ This model is then compared to an Azure AutoML run.
 ## Summary
 This dataset contains data about socio-economical statuses, financial records and similars. Here we are seeking to predict if for a specific person a bankmarketing campaing will take place or not.
 To find out the above mentioned target we had tested two different approaches.
+
 *Experiment 1*:
 We have created a train.py script which contains a logistic regression model. In this case the experiment model has been performed using the hyperdrive package which supports or focuses on hyperparameter tuning
 
@@ -16,7 +17,6 @@ In this experiment we have decided to try the benefits of the AutoMl package whi
 
 
 ## Scikit-learn Pipeline
-**Explain the pipeline architecture, including data, hyperparameter tuning, and classification algorithm.**
 The pipeline architecture could be described under the following steps:
 - Workspace Creation:
 This workspace is used to manage data, compute resources, code, models, and other artifacts related to machine learning workloads.
@@ -58,18 +58,18 @@ In addition to the above mentioned information you can see below a small diction
 
 
 ## Pipeline comparison
-Comparing the results of the Hyperdrive agains the AutoMl there are actually not many differences. Let's evaluate for instance the main metric of interest:
+Comparing the results of the primary metric of interest between Hyperdrive and AutoMl are actually very similar. In this case the "accuracy" was very similar:
 
 - Hyperdrive Accuracy: 0.9104151493080845
 - AutoMl Accuravy: 0.91551
 
-Even though in the current case there was not a huge difference on metric of interest, it's important to emphasize the significant difference between these pipelines:
+Even though in the current case there was not a huge difference on the metric of interest, it's important to emphasize the significant difference between these pipelines:
 
 For AutoML you do not need to specify the algorithm to be tested. The AutoML will try different models and algorithms. However it is possible to  choose which models are allowed (allowed_models) or which not (blocked_models)
 
 On the other hand when running the HyperDrive we really had to specify (by using the 'train.py' script) which specific algorithm we want to test. The hyperdrive helps us though to automate testing different  parameters within the selected model; nevertheless this parameters have to be specified from us.
 
-In a more generic way you could say that the difference between HyperDrive and AutoML is that HyperDrive focuses on automation of choosing parameters for the selected model; while AutoML focuses on automating the main ML tasks , i.e.: Feature Engineering, Hyperparameter  selection, Training, Tuning.
+In a more generic way you could say that the difference between HyperDrive and AutoML is that HyperDrive focuses on automation of choosing parameters for the selected model; while AutoML focuses on automating the main ML tasks , i.e.: Feature Engineering, Hyperparameter  selection, training and tuning.
 
 ## Future work
 In the future it would be interesting to do some additional adjustments to see the outputs of the experiments. Here a couple of ideas or possibilities:
