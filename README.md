@@ -85,6 +85,13 @@ A good start would be to perform some sampling up/down since the classes are not
 Predicting only accuracy could me in some cases misleading. It would be interesting to see how the model performs by checking model performance by other metrics, such as AUC or by checking on specific elements of the Confusion Matrix such as True Positive Rates and/or False Positive Rates.
 
 - *Paremeters*:
-The train.py scripts concentrates only on the inverse of regularization strength ('--C') and the maximum number of iterations to solve to converge ('max_iter'). Nevetheless it would interesting to add additional parameters to observe how the model performs. Some proposals could include the type of penalty, different class weights or the type of solver
+The train.py scripts concentrates only on the inverse of regularization strength ('--C') and the maximum number of iterations to solve to converge ('max_iter'). Nevetheless it would interesting to add additional parameters to observe how the model performs. Some proposals could include the type of penalty, different class weights or different type of  solver.
+
+- *Feature selection*:
+If you inspect the dataset, it contains 32 independent variables. For sure not all of them have a significant impact on the variable (y) of interest. So it might be a good idea to check which are the variables with the highest influence on the output of interest. Once this has taken place we could re-run the experiments. Some of the advantages here would be (among others the following):
+
+  - Computational expensiveness will be reduced
+  - It simplies the model without losing the strenght of it
+  - The above simplication makes easier the maintainance of the model
 
 
